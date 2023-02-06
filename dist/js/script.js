@@ -1,14 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    //ConsultModal( from header)
+    //ConsultModal( from header) (from prices)
     const headerBtnTriger = document.querySelector('.header-contact__modaltriger');
+    const pricesBtnTrigger = document.querySelectorAll('.prices-item__button');
     const consultModal = document.querySelector('#consult-modal');
     const consultCloseModal = document.querySelector('#consult-modal .dialog__close');
+
+    // ( from header)
     headerBtnTriger.addEventListener('click', () => {
         consultModal.style.display = 'flex';
     });
     consultCloseModal.addEventListener('click', () => {
         consultModal.style.display = 'none';
     });
+    // (from prices)
+    pricesBtnTrigger.forEach(btn => {
+        btn.addEventListener('click', () => {
+            consultModal.style.display = 'flex';
+        })
+    });
+
+
+    
 
     //QualityModal(from sections)
     const qualityBtnTriger = document.querySelector('.quality-speak__button');

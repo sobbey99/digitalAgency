@@ -681,3 +681,129 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     }
 }
 
+
+//CONTRACT
+.contract {
+    position: relative;
+    padding-bottom: 200px;
+    &__topfon {
+        width: 100%;
+        // transform: translateY(99%);
+        position: absolute;
+        z-index: 4;
+    }
+    background-color: #F8F8F8;
+    &__wrapper {
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-img  {
+        width: 580px;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        max-width: 480px;
+        font-size: 20px;
+        margin: 25px 0;
+    }
+    &__title {
+        font-size: 42px;
+    }
+    &__descr {
+        margin-left: 20px;
+    }
+    &-offset {
+        position: absolute;
+        bottom:-110px;
+        right: 120px;
+        width: 480px;
+    }
+}
+
+.prices{
+    padding-top: 170px;
+    padding-bottom: 120px;
+    &__title {
+        text-align: center;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 46px;
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 23px;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+        border-radius: 9px;
+        padding: 22px;
+        &__title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 34px;
+            margin-bottom: 20px;
+        }
+        &__img {
+            width: 150px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            p {
+                margin: 25px 0;
+                max-width: 300px;
+            }
+        }
+        &__last {
+            margin-top: 30px;
+            margin-bottom: 60px;
+
+        }
+        &__divider {
+            border:1px solid #E82525;
+            text-align: center;
+            max-width: 300px;
+            padding: 20px 10px;
+            margin-bottom: 60px;
+        }
+        &__price{
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 60px;
+        }
+        &__button {
+            outline: none;
+            border: none;
+            @include button;
+            @include runningDiv;
+            width: 210px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .choosed {
+        box-shadow: 0px 0px 30px 0px rgb(255 0 0 / 90%);
+        transform: scale(1.1);
+    }
+}
