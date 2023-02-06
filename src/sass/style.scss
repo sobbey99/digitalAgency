@@ -32,6 +32,81 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
   }
 
 
+//MODALS
+.consult-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    z-index: 30;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: 0.3s all;
+    .dialog {
+        width: 560px;
+        height: 564px;
+        padding: 40px 45px;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        &__title {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        &__subtitle {
+            font-weight: 300;
+            font-size: 18px;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        &__input {
+            padding: 0 21px;
+            font-size: 15px;
+            font-weight: 400;
+            height: 60px;
+            margin-bottom: 10px;
+            border: 1px solid #c9c9c9;
+            outline: none;
+            border-radius: 5px;
+            &:focus {
+                outline: 1px solid #e82525;
+            }
+        }
+        &__submit {
+            border:none;
+            outline: none;
+            @include button;
+            height: 54px;
+        }
+        &__policy {
+            font-weight: 300;
+            font-size: 14px;
+        }
+        &__close {
+            position: absolute;
+            top: -40px;
+            right: -50px;
+            color: #fff;
+            font-size: 35px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
 
 //HEADER
 .header {
