@@ -529,13 +529,13 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     &__wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 350px;
-        grid-auto-rows: 350px;
+        grid-template-rows: 500px;
+        grid-auto-rows: 500px;
         padding: 0 40px;
         gap: 50px;
     }
     &-item{
-        padding-top: 80px;
+        padding-top: 150px;
         color: #fff;
         background: url('../img/likeExample.jpg') center center /cover no-repeat;
         &__title{
