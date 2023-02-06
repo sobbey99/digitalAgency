@@ -31,6 +31,16 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     }
 }
 
+@keyframes appearY {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 //mixins
 @mixin button {
     margin: 0;
@@ -133,6 +143,7 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     position: fixed;
     width: 100%;
     z-index: 5;
+    transition: all 0.3s;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -207,6 +218,17 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
             text-transform: uppercase;
         }
     }
+}
+//HEADER-SCROLL
+.header_scroll {
+    height: 80px;
+    .header__nav {
+        display: none;
+    }
+    .header__address {
+        visibility: hidden;
+    }
+    animation: appearY .5s linear 0s 1 normal none;
 }
 
 //OFFER
