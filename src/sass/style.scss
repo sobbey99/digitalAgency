@@ -23,11 +23,11 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
         left: 0%;
     }
     15% {
-        left: 110%;
+        left: 120%;
     }
 
     100% {
-        left: 110%;
+        left: 120%;
     }
 }
 
@@ -57,6 +57,43 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     position: relative;
     overflow: hidden;
   }
+
+@mixin clasicInput {
+    padding: 0 21px;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(235,235,235);
+    transition: 0.3s all;
+    &:focus {
+        outline: 1px solid #e82525;
+        background-color: rgb(255,255,255);
+
+    }
+}
+
+@mixin runningDiv {
+    &::after {
+        content: '';
+        z-index: 5;
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        width: 50px;
+        height: 170px;
+        transform: rotate(45deg);
+        top: -40px;
+        left: 0%;
+        animation-name: animatebutton;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+}
 
 
 //MODALS
@@ -309,22 +346,7 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
             outline: none;
             @include button;
             height: 60px;
-            &::after {
-                content: '';
-                z-index: 5;
-                display: block;
-                background-color: #fff;
-                position: absolute;
-                width: 50px;
-                height: 170px;
-                transform: rotate(45deg);
-                top: -40px;
-                left: 0%;
-                animation-name: animatebutton;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
-                animation-timing-function: ease;
-            }
+            @include runningDiv;
         }
     }
     &-icons {
@@ -383,4 +405,111 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     }
 }
 
-
+//SOLUTION
+.solution {
+    background: url('../icons/solution_bg.png') center top/ cover no-repeat;
+    padding: 55px 0;
+    color: #fff;
+    &__title {
+        font-size: 40px;
+        line-height: 55px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &-call {
+        height: 130px;
+        background-color: #fff;
+        padding: 35px;
+        width: 940px;
+        position: relative;
+        color: black;
+        margin-bottom: 50px;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 5px;
+            background-color: #E82525;
+            left: 0;
+            top: 0;
+        }
+        &__text {
+            font-size: 21px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        &__link {
+            color: rgb(232, 37, 37);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 27px;
+        }
+    }
+    &-descr {
+        position: relative;
+        p{
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 30px;
+            b {
+                font-weight: 700;
+            }
+        }
+        &__img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &-form {
+        padding: 50px 0;
+        background-color: #fff;
+        color: black;
+        height: 295px;
+        &__title {
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 39px;
+            text-align: center;
+            margin-bottom: 50px;
+            span {
+                color: rgb(232, 37, 37);
+            }
+        }
+        &__input {
+            @include clasicInput;
+            height: 75px;
+            padding-left: 60px;
+            &_1 {
+                background: url('../icons/input_profile.png') no-repeat 28px center #ededed;
+            }
+            &_2 {
+                background: url('../icons/input_phone.png') no-repeat 28px center #ededed;
+            }
+        }
+        &__button {
+            outline: none;
+            border: none;
+            @include button;
+            height: 75px;
+            @include runningDiv;
+        }
+        form {
+            display: grid;
+            padding: 0 60px;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 15px;
+        }
+        &__policy {
+            display: flex;
+            justify-content: center;
+             p {
+                text-align: center;
+                font-size: 13px;
+                line-height: 19px;
+                color: #bdb9b9;
+            }
+        }
+    }
+}
