@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // });
     //Header Change on Scroll
     const header = document.querySelector('.header');
     const body = document.querySelector('body');
@@ -47,4 +46,29 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('header_scroll');
         }
     }
+
+    //Prices open list
+    function openList(component,btn){
+        const list = document.querySelector(component);
+        const openListBtn = document.querySelector(btn);
+
+        openListBtn.addEventListener('click', () => {
+            list.classList.toggle('prices-item__list_open');
+            if (list.classList.contains('prices-item__list_open')) {
+                openListBtn.innerHTML = `
+                        Скрыть
+                        <div class="triangle triangle_up"></div>
+                `
+            } else {
+                openListBtn.innerHTML = `
+                        Показать полный список
+                        <div class="triangle"></div>
+                `
+            }
+        });
+        
+    }
+    openList('.prices-item__list_1', '.prices-item__more_1');
+    openList('.prices-item__list_2', '.prices-item__more_2');
+    openList('.prices-item__list_3', '.prices-item__more_3');
 });
