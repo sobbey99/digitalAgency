@@ -71,4 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
     openList('.prices-item__list_1', '.prices-item__more_1');
     openList('.prices-item__list_2', '.prices-item__more_2');
     openList('.prices-item__list_3', '.prices-item__more_3');
+
+
+    //DROPDOWN QUESTION ITEM
+    const questionTriggers = document.querySelectorAll('.question-item__wrapper');
+
+    questionTriggers.forEach(item => {
+        item.addEventListener('click', (e) => {
+            const questionDescr = item.nextElementSibling;
+            questionDescr.classList.toggle('opened');
+        });
+    })
 });
+

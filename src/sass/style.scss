@@ -935,3 +935,63 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
         left: 80px;
     }
 }
+
+//QUESTION
+.question {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    &__title {
+        font-size: 42px;
+        line-height: 51px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &-item {
+        padding: 40px 20px;
+        box-shadow:0 10px 30px -10px #ccc;
+        border-radius: 8px;
+        margin: 30px 20px;
+        cursor: pointer;
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+        }
+        &__number {
+            background-color: #e82525;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            line-height: 24px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 15px;
+        }
+        &__more {
+            font-size: 18px;
+        }
+        &__descr {
+            max-width: 400px;
+            margin: 0 auto;
+            height: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+        .opened {
+            height: auto;
+            padding-top: 25px;
+        }
+    }
+}
