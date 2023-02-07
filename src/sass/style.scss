@@ -1803,8 +1803,200 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
             text-align: center;
         }
     }
+
+    .modal {
+        .dialog {
+            width: 80%;
+            padding: 30px 10px;
+        }
+    }
 }
 
 @media  screen and (max-width: 575px) {
+    .header-mobile {
+        height: 140px;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__call {
+            display: none;
+        }
+        &__navigation {
+            width: 100%;
+        }
+    }
+
+    .offer {
+        padding-top: 170px;
+    }
+
+    .tasks{
+        padding: 40px 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-auto-rows: auto;
+            row-gap: 10px;
+        }
+        &-item {
+            align-items: center;
+            text-align: center;
+            &__text {
+                max-width: none;
+                text-align: center;
+            }
+        }
+    }
+
+    .solution{
+        &__title {
+            font-size: 20px;
+        }
+        &-call {
+            &__link {
+                display: block;
+                line-height: 16px;
+                transform: translateY(10px);
+            }
+            &__text{
+                line-height: 20px;
+            }
+        }
+        &-descr {
+            &__img {
+                width: 160px;
+            }
+            p {
+                max-width: 200px;
+            }
+        }
+        &-form {
+            &__title {
+                font-size: 20px;
+            }
+            form {
+                padding: 0 10px;
+            }
+        }
+    }
+
+
+    .contract{
+        &-img {
+            width: 100%;
+        }
+    }
+
+
+    .company {
+        &-img {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        height: auto;
+        padding: 25px 0;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &-contact{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
+            &__wrapper {
+                align-items: center;
+            }
+        }
+        &-logo {
+            margin-bottom: 10px;
+        }
+    }
+
+    .results{
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
     
+    .strategy{
+        &:before {
+            display: none;
+        }
+    }
+
+    .quality{
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .prices{
+        &__subtitle {
+            padding: 0 10px;
+        }
+        &__wrapper {
+            padding: 0 15px;
+        }
+    }
+
+    .company {
+        padding-top: 50px;
+        &-descr{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__text{
+                margin: 5px 0;
+            }
+        }
+        &-img {
+            width: 90%;
+        }
+        &__title {
+            font-size: 35px;
+        }
+    }
+
+    .garanty{
+        &__title {
+            font-size: 22px;
+        }
+    }
+
+    .question {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        &-item {
+            padding: 20px 5px;
+            &__number {
+                width: 20px;
+                height: 20px;
+                font-size: 13px;
+                margin-right: 6px;
+            }
+        }
+    }
+
+    .modal {
+        .dialog{
+            &__title {
+                font-size: 20px;
+                line-height: 27px;
+            }
+            &__policy {
+                margin-top: 20px;
+            }
+            justify-content: center;
+            &__close {
+                top: -65px;
+                right: 0;
+            }
+        }
+    }
 }

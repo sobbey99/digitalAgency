@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
     consultModal('.prices-item__button_2','#consult-modal', '#consult-modal .dialog__close' );
     consultModal('.prices-item__button_3','#consult-modal', '#consult-modal .dialog__close' );
     consultModal('.footer-contact__button','#consult-modal', '#consult-modal .dialog__close' );
+    consultModal('.header-mobile__button','#consult-modal', '#consult-modal .dialog__close' );
+    consultModal('.header-mobile__navigation_button','#consult-modal', '#consult-modal .dialog__close' );
+    consultModal('.company-descr__button','#consult-modal', '#consult-modal .dialog__close' );
+    
+    
+    
     
 
     
