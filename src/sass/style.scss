@@ -995,3 +995,109 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
         }
     }
 }
+
+//FOOTER
+.footer {
+    height: 255px;
+    background: #333;
+    color: #fff;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 45px;
+    }
+    &-logo{
+        &__type{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-size: 23px;
+                line-height: 43px;
+                font-weight: 700;
+            }
+            img {
+                width: 50px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &-social {
+        p {
+            opacity: .7;
+            font-size: 13px;
+            line-height: 18px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        &__link {
+            text-decoration: none;
+            margin: 0 2px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &-list {
+        list-style-type: none;
+        li {
+            margin: 7px 0;
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #fff;
+                &:hover {
+                    color: rgba(255,255,255, .7);
+                }
+            }
+        }
+    }
+    &-contact {
+        &__wrapper{
+            display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        }
+        &__call {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            img {
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
+            p{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: #fff;
+            }
+        }
+        &__time {
+            display: flex;
+            justify-content: end;
+            p {
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+        &__button {
+            outline: none;
+            border:none;
+            @include button;
+            height: 34px;
+            width: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px auto;
+        }
+        &__address {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}

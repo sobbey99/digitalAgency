@@ -1,24 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    //ConsultModal( from header) (from prices)
-    const headerBtnTriger = document.querySelector('.header-contact__modaltriger');
-    const pricesBtnTrigger = document.querySelectorAll('.prices-item__button');
-    const consultModal = document.querySelector('#consult-modal');
-    const consultCloseModal = document.querySelector('#consult-modal .dialog__close');
+    function consultModal(openTrigger,modalWindow, closeTrigger){
+        const openBtn = document.querySelector(openTrigger);
+        const closeBtn = document.querySelector(closeTrigger);
+        const modal = document.querySelector(modalWindow);
+        openBtn.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
 
-    // ( from header)
-    headerBtnTriger.addEventListener('click', () => {
-        consultModal.style.display = 'flex';
-    });
-    consultCloseModal.addEventListener('click', () => {
-        consultModal.style.display = 'none';
-    });
-    // (from prices)
-    pricesBtnTrigger.forEach(btn => {
-        btn.addEventListener('click', () => {
-            consultModal.style.display = 'flex';
-        })
-    });
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
 
+    consultModal('.header-contact__modaltriger','#consult-modal', '#consult-modal .dialog__close' );
+    consultModal('.prices-item__button_1','#consult-modal', '#consult-modal .dialog__close' );
+    consultModal('.prices-item__button_2','#consult-modal', '#consult-modal .dialog__close' );
+    consultModal('.prices-item__button_3','#consult-modal', '#consult-modal .dialog__close' );
+    consultModal('.footer-contact__button','#consult-modal', '#consult-modal .dialog__close' );
+    
 
     
 
