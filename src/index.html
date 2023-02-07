@@ -24,10 +24,10 @@
                     <img src="icons/adres.svg" alt="Address">
                     <address>г. Москва<br>ул. Новгородская, д. 1, лит. А</address>
                 </div>
-                <div class="header__phone header__info">
+                <a class="header__phone header__info" href="#">
                     <img src="icons/tel.png" alt="Phone">
-                    <a href="tel:">8 (800) 301-17-79</a>
-                </div>
+                    <p>8 (800) 301-17-79</p>
+                </a>
               
                 <div class="header-contact">
                     <div class="header-contact__modaltriger">
@@ -58,10 +58,78 @@
             </nav>
         </div>
     </header>
+
+    <div class="header-mobile">
+        <div class="container">
+           <div class="header-mobile__wrapper">
+                <div class="header-mobile__left">
+                    <div class="header-mobile__logo">
+                        <img src="icons/logo.png" alt="#">
+                        <p>Digital Context</p>
+                    </div>
+                </div>
+                <div class="header-mobile__right">
+                    <div class="header-mobile__contacts">
+                        <a href="#" class="header-mobile__call">
+                            <img src="icons/tel.png" alt="#">
+                            <p>8 (800) 301-17-79</p>
+                        </a>
+                        <div class="header-mobile__social">
+                            <a href="#" class="header-mobile__sociallink">
+                                <img src="icons/contact_icon_1.png" alt="#">
+                            </a>
+                            <a href="#" class="header-mobile__sociallink">
+                                <img src="icons/contact_icon_2.png" alt="#">
+                            </a>
+            
+                            <div class="header-mobile__button">
+                                Заказать звонок
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="header-mobile__hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+        <div class="header-mobile__menu">
+            <div class="header-mobile__navigation">
+                <div class="header-mobile__navigation_top">
+                    <ul>
+                        <li><a href="#">создание сайтов</a></li>
+                        <li><a href="#">продвижение сайтов</a></li>
+                        <li><a href="#">реклама</a></li>
+                        <li><a href="#">результаты</a></li>
+                        <li><a href="#">тарифы</a></li>
+                        <li><a href="#">кейсы</a></li>
+                        <li><a href="#">статьи</a></li>
+                        <li><a href="#">контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header-mobile__navigation_bottom">
+                    <div class="header-mobile__navigation_address">г. Москва, ул. Новгородская, д. 1, лит. А</div>
+                    <a href="#" class="header-mobile__navigation_phone">8 (800) 301-17-79</a>
+                    <div class="header-mobile__navigation_button">
+                        Заказать звонок
+                    </div>
+                </div>
+
+                <div class="header-mobile__navigation_close">
+                    &#10006;
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="offer">
         <div class="container">
             <div class="offer-context">
-                <div class="offer-context__left">
+                
+                <div class="offer__heading">
                     <h1 class="offer__title">Услуги специалистов по<br>настройке рекламы Яндекс<br>Директ</h1>
                     <ul class="offer__checklist">
                         <li>
@@ -74,32 +142,34 @@
                         </li>
                     </ul>
                 </div>
-                <div class="offer-context__right">
-                    <form action="#" class="offer-form">
-                        <input type="text" class="offer-form__input" placeholder="Имя" id="headerName" name="headerName">
-                        <input type="text" class="offer-form__input" placeholder="Телефон" id="headerPhone" name="headerPhone">
-                        <button type="submit" class="offer-form__btn">Получить клиентов</button>
-                        <div class="offer-form__cert">
-                            <img src="icons/pop1.png" alt="YandexCert" class="first">
-                            <img src="icons/pop2.png" alt="GoogleCert">
-                        </div>
-                    </form>
+                
+
+                <form action="#" class="offer-form">
+                    <input type="text" class="offer-form__input" placeholder="Имя" id="headerName" name="headerName">
+                    <input type="text" class="offer-form__input" placeholder="Телефон" id="headerPhone" name="headerPhone">
+                    <button type="submit" class="offer-form__btn">Получить клиентов</button>
+                    <div class="offer-form__cert">
+                        <img src="icons/pop1.png" alt="YandexCert" class="first">
+                        <img src="icons/pop2.png" alt="GoogleCert">
+                    </div>
+                </form>
+
+                <div class="offer-icons">
+                    <div class="offer-icons__item">
+                        <img src="icons/b1.svg" alt="#">
+                        <p>Настройка и запуск<br>РК За 2 дня</p>
+                    </div>
+                    <div class="offer-icons__item">
+                        <img src="icons/b2.svg" alt="#">
+                        <p>Создание антикризисных<br>УТП для вашего бизнеса</p>
+                    </div>
+                    <div class="offer-icons__item">
+                        <img src="icons/b3.svg" alt="#">
+                        <p>Помощь в получении доп.<br>денежных бонусов от Яндекса</p>
+                    </div>
                 </div>
             </div>
-            <div class="offer-icons">
-                <div class="offer-icons__item">
-                    <img src="icons/b1.svg" alt="#">
-                    <p>Настройка и запуск<br>РК За 2 дня</p>
-                </div>
-                <div class="offer-icons__item">
-                    <img src="icons/b2.svg" alt="#">
-                    <p>Создание антикризисных<br>УТП для вашего бизнеса</p>
-                </div>
-                <div class="offer-icons__item">
-                    <img src="icons/b3.svg" alt="#">
-                    <p>Помощь в получении доп.<br>денежных бонусов от Яндекса</p>
-                </div>
-            </div>
+           
         </div>
     </section>
 

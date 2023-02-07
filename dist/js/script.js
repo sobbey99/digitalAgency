@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     function consultModal(openTrigger,modalWindow, closeTrigger){
         const openBtn = document.querySelector(openTrigger);
         const closeBtn = document.querySelector(closeTrigger);
@@ -81,5 +82,18 @@ document.addEventListener('DOMContentLoaded', () => {
             questionDescr.classList.toggle('opened');
         });
     })
+
+    //HEADER MOBILE MENU
+    const mobileMenuOpenBtn = document.querySelector('.header-mobile__hamburger');
+    const mobileMenuCloseBtn = document.querySelector('.header-mobile__navigation_close');
+    const mobileMenu = document.querySelector('.header-mobile__menu');
+
+    mobileMenuOpenBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open-menu');
+    });
+
+    mobileMenuCloseBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open-menu');
+    });
 });
 
