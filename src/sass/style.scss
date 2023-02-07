@@ -1316,6 +1316,11 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
         &-form {
             justify-self: center;
             width: 70%;
+            &__btn {
+                &:after {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -1644,8 +1649,160 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
 
 }
 
+//DONE
 @media  screen and (max-width: 776px) {
-    
+
+    //  * {
+    //     background-color: rgba(0,0,255,.3);
+    // }
+
+    .header-mobile{
+        padding-top: 0;
+        .container {
+            max-width: none;
+            height: 100%;
+        }
+        &__button {
+            padding-right: 0;
+            padding-left: 0;
+            width: 160px;
+        }
+        &__contacts{
+            align-items: center;
+        }
+        &__navigation {
+            width: 75%;
+        }
+    }
+
+
+    .offer{
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    .solution {
+        &-descr{
+            &__img {
+                right: 0;
+                width: 220px;
+            }
+            p {
+                max-width: 300px;
+            }
+        }
+        &-call {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .prices{
+        &__wrapper {
+            grid-template-columns:  1fr;
+            row-gap: 40px;
+            column-gap:0;
+            padding: 0 55px;
+        }
+        &-item {
+            img {
+                width: 200px;
+            }
+            padding-top: 20px;
+            padding-bottom: 20px;
+            &__button {
+                width: 70%;
+            }
+        }
+    }
+
+    .tasks{
+        &-item{
+            &__text{
+                font-size: 17px;
+            }
+        }
+    }
+
+    .results{
+        &__wrapper {
+            grid-template-rows: 200px;
+            grid-auto-rows: 200px;
+        }
+        &-item {
+            &__title {
+                font-size: 15px;
+            }
+            &__stats{
+                margin-top: 10px;
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .strategy{
+        &-form {
+            grid-template-columns: 1fr;
+        }
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+    }
+
+    .quality{
+        &__title {
+            font-size: 30px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &-speak{
+            &__text{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .contract{
+        padding-bottom: 50px;
+        &__wrapper {
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        &__topfon {
+            display: none;
+        }
+    }
+
+
+    .company {
+        &-descr {
+            transform: none;
+        }
+        &__wrapper {
+            align-items: center;
+        }
+    }
+
+    .garanty {
+        &:before {
+            display: none;
+        }
+        &-form {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .question {
+        &__title {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
 }
 
 @media  screen and (max-width: 575px) {
