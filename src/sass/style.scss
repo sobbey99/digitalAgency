@@ -1284,6 +1284,8 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
 }
 
 //MEDIA
+
+//DONE
 @media  screen and (max-width: 1200px) {
     //HEADER SECTION 1200px
     .header{
@@ -1465,8 +1467,168 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     }
 }
 
+
+//DONE
 @media  screen and (max-width: 991px) {
+    // * {
+    //     background-color: rgba(0,0,255,.3);
+    // }
+
+    //OFFER SECTION 991px
+    .offer {
+        padding-bottom: 80px;
+        &-form {
+            width: 100%;
+        }
+    }
+
+    //TASKS SECTION 991px
+    .tasks{
+        &__title{
+            font-size: 30px;
+            line-height: 44px;
+        }
+        &__wrapper {
+            row-gap: 120px;
+        }
+    }
+
+    //SOLUTION SECTION 991px
+    .solution {
+        &-call {
+            width: 500px;
+            &__text{
+                font-size: 16px;
+            }
+            &__link {
+                font-size: 22px;
+            }
+        }
+        &-descr{
+            p {
+                max-width: 450px;
+            }
+            &__img {
+                right: -35px;
+            }
+        }
+    }
+
+    //PRICES SECTION 991px
+    .prices{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            margin-bottom: 50px;
+        }
+        .container {
+            max-width: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        &__wrapper {
+            column-gap: none;
+            grid-template-columns: repeat(3, 220px);
+            justify-content: center;
+        }
+        .choosed {
+            transform: scale(1.04);
+        }
+        &-item {
+            padding: 5px;
+            img {
+                width: 110px;
+                margin-bottom: 10px;
+            }
+            &__title {
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+            &__more {
+                font-size: 14px;
+            }
+        }
+    }
+
+    //RESULTS SECTION 991px
+    .results{
+        &__wrapper{
+            gap: 25px;
+            grid-template-rows: 300px;
+            grid-auto-rows: 300px;
+        }
+        &__title {
+            font-size: 30px;
+            
+        }
+        &-item {
+            padding-top: 25px;
+        }
+    }
+
+    //STRATEGY SECTION 991px
+    .strategy {
+        padding-top: 50px;
+        &:before {
+            width: 150px;
+            height: 150px;
+            top: -70px;
+        }
+    }
+
+
+    //QUALITY SECTION 991px
+    .quality {
+        padding: 25px;
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+        &__wrapper {
+            gap: 25px;
+        }
+        &-speak{
+            margin-top: 50px;
+        }
+    }
+
     
+    //COMPANY SECTION 991px
+    .company {
+        padding-top: 100px;
+        &-img {
+            width: 600px;
+        }
+    }
+
+    //GARANTY SECTION 991px
+    .garanty{
+        &__title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+        &:before {
+            width: 165px;
+            height: 130px;
+            bottom: -85px;
+        }
+    }
+
+    //QUESTION SECTION 991px
+    .question {
+        padding-top: 110px;
+    }
+
+
 }
 
 @media  screen and (max-width: 776px) {
