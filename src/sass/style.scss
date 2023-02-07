@@ -1629,6 +1629,19 @@ p,ul,ol,h1,h2,h3,h4,h5,h6,address {
     }
 
 
+    //FOOTER SECTION 991px
+    .footer{
+        height: 200px;
+        .container {
+            height: 100%;
+        }
+        &__wrapper{
+            padding-top: 0;
+            height: 100%;
+            
+        }
+    }
+
 }
 
 @media  screen and (max-width: 776px) {
